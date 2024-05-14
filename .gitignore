@@ -14,4 +14,6 @@
 # Include tfplan files, this is good practice It appears (if you ever use the -out flag)
 *tfplan*
 Task-1/terraform.tfstate
-Task-1/terraform.tfstate
+Task-2/.terraform.lock.hcl
+Task-3/.terraform.lock.hcl
+Task-1/terraform-mania-1997-96587c92223a.json
