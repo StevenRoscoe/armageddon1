@@ -13,3 +13,5 @@
 
 # Include tfplan files, this is good practice It appears (if you ever use the -out flag)
 *tfplan*
+Task-1/terraform.tfstate
+Task-1/terraform.tfstate
