@@ -14,21 +14,21 @@ resource "google_compute_firewall" "euhq_firewall" {
 
 resource "google_compute_firewall" "americas_firewall" {
   name    = "americas-firewall"
-  network = google_compute_network.euhq_vpc.name
+  network = google_compute_network.america_vpc.name
   direction = "INGRESS"
   priority = "1000"
 
   allow {
     protocol = "tcp"
-    ports    = ["3389"]
+    ports    = ["80", "22"]
   }
 
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = ["0.0.0.0/0", "35.235.240.0/20"]
 }
 
 resource "google_compute_firewall" "asia_firewall" {
   name    = "asia-firewall"
-  network = google_compute_network.euhq_vpc.name
+  network = google_compute_network.asia_vpc.name
   direction = "INGRESS"
   priority = "1000"
 
